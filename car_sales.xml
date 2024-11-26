@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cars>
+    <car>
+        <model>Škoda Octavia</model>
+        <datum>2.12.2017</datum>
+        <cena>400000</cena>
+    </car>
+    <car>
+        <model>Škoda Superb</model>
+        <datum>3.12.2019</datum>
+        <cena>610000</cena>
+    </car>
+    <car>
+        <model>Škoda Fabia</model>
+        <datum>4.12.2018</datum>
+        <cena>350000</cena>
+    </car>
+    <car>
+        <model>Škoda Octavia</model>
+        <datum>4.12.2020</datum>
+        <cena>500000</cena>
+    </car>
+    <car>
+        <model>Škoda Octavia</model>
+        <datum>5.12.2018</datum>
+        <cena>450000</cena>
+    </car>
+    <car>
+        <model>Škoda Fabia</model>
+        <datum>5.12.2020</datum>
+        <cena>250000</cena>
+    </car>
+    <car>
+        <model>Škoda Fabia</model>
+        <datum>6.12.2019</datum>
+        <cena>290000</cena>
+    </car>
+    <car>
+        <model>Škoda Kodiaq</model>
+        <datum>4.12.2019</datum>
+        <cena>690000</cena>
+    </car>
+    <car>
+        <model>Škoda Superb</model>
+        <datum>5.12.2021</datum>
+        <cena>800000</cena>
+    </car>
+    <car>
+        <model>Škoda Kodiaq</model>
+        <datum>6.12.2020</datum>
+        <cena>700000</cena>
+    </car>
+    <car>
+        <model>Škoda Octavia</model>
+        <datum>3.12.2021</datum>
+        <cena>310000</cena>
+    </car>
+    <car>
+        <model>Škoda Octavia</model>
+        <datum>2.12.2019</datum>
+        <cena>320000</cena>
+    </car>
+</cars>
