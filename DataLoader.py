@@ -50,10 +50,9 @@ class FileLoader:
     def load_file(self):
         options = QFileDialog.Options()
         file_name, _ = QFileDialog.getOpenFileName(self.ui.main_window, "Načíst soubor", "", "JSON Files (*.json);;XML Files (*.xml);;All Files (*)", options=options)
-        if file_name:
-            self.load_previous_file(file_name)
+        if not file_name:
+            return
 
-    def load_previous_file(self, file_name):
         if file_name.endswith('.json'):
             loader = JsonDataLoader()
         elif file_name.endswith('.xml'):
@@ -61,9 +60,6 @@ class FileLoader:
         else:
             return
 
-        self.ui.main_window.cars = loader.load_data(file_name)
-        self.ui.main_window.update_table()
-        self.ui.main_window.update_max_price()
-        self.ui.main_window.apply_price_backgrounds()
-        self.ui.main_window.update_year_options()
-        self.ui.total_label.setText(f'Načtený soubor: {file_name}')
+        cars = loader.load_data(file_name)
+
+        self.ui.update_cars(cars, file_name)
