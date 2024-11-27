@@ -1,5 +1,5 @@
 import pytest
-from Car import Car
+from ..Car import Car
 
 def test_car_initialization():
     # Test, že se auto inicializuje správně
