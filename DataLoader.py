@@ -36,7 +36,11 @@ class XmlDataLoader(DataLoader):
                     sale_date = datetime.strptime(sale_date, "%d.%m.%Y").strftime("%Y.%m.%d")
                 except ValueError:
                     sale_date = ""
-                price = car_element.find('cena').text if car_element.find('cena') is not None else ""
+                price_text = car_element.find('cena').text if car_element.find('cena') is not None else "0"
+                try:
+                    price = float(price_text)
+                except ValueError:
+                    price = 0.0
                 car = Car(model, sale_date, price)
                 cars.append(car)
         except ET.ParseError:
